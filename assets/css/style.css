@@ -1,16 +1,78 @@
-/*Universal Selector -- For all elements, removes padding and margin*/
+
+/*Universal selector to remove borders*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/*Element Selector -- Sets background color to #d9dcd6*/
+/*Class selector to set all header objets on the same line*/
+.header{ 
+    display: inline-flex;
+
+}
+
+/*Class selector to set all list items in the header on the same line*/
+.header ul li{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-left: 25px;
+
+}
+
+/*Class selector to set all contact items in the same line*/
+.contact-me{
+    display: inline-flex;
+    justify-content:space-evenly;
+}
+
+.contact-me-item{
+    margin-left:20px;
+}
+
+.body-sections{
+    display:inline-flex;
+}
+
+.section-divider{
+    border-right: 1px;
+    border-right-color: black;
+    border-right-style:solid;
+    margin-right:5px;
+    min-width:250px;
+    text-align:right;
+    padding:5px;
+}
+
+.section-text{
+    font-family:'Arial', 'Helvetica', 'sans-serif'
+}
+
+.work-box-align{
+    flex-wrap:wrap;
+    display:flex;
+}
+
+
+.work-box{
+}
+
+.work-img{
+    max-width:250px;
+    border-right: 10 px;
+}
+
+/*
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #d9dcd6;
 }
 
-/*Class Selector -- Sets .header class to have a background color of #2a607c and text color of #ffffff*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,7 +80,6 @@ body {
     color: #ffffff;
 }
 
-/*Class Selector -- Element Selector for h1 in class .header.  */
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -39,9 +100,8 @@ body {
 /*Commented out as this line does not do anything
 header div ul {
     list-style-type: none;
-}*/
+}
 
-/*Nav bar -- Keeps the nav bar on one line instead of a list with bullets.*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
@@ -204,3 +264,4 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+*/
