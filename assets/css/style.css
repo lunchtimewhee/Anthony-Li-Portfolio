@@ -12,18 +12,11 @@ body{
 }
 
 a{
-    padding:5px;
     border-bottom-style:solid;
     border-bottom-width: 3px;
     border-bottom-color:#96e0e0;
 }
 
-img{
-    object-fit: cover; 
-    object-position: 50% 50%;
-    width:100%;
-    height:100%;
-}
 
 /*Class selector to set all header objets on the same line*/
 .header{ 
@@ -48,6 +41,14 @@ a:active{
 
 a:hover{
     text-decoration:none;
+}
+
+li a{
+    padding: 5px;
+}
+
+h3 a{
+    padding: 5px;
 }
 
 .header-text-container{
@@ -174,7 +175,13 @@ a:hover{
 .work-image{
     transition: filter 0.3s ease-out;
     filter:brightness(0.85);
-    
+}    
+
+.work-image img{
+    object-fit: cover; 
+    object-position: 50% 0%;
+    width:100%;
+    height:100%;
 }
 
 
