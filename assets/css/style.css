@@ -82,13 +82,18 @@
     border-color:#96e0e0;
     position:relative;
     overflow:hidden;
+    
+}
+
+.work-image:hover{
+    transition: filter 0.3s ease-out;
+    filter: brightness(1);
 }
 
 .work-image{
-
     border-right: 10 px;
-    
-
+    transition: filter 0.3s ease-out;
+    filter:brightness(0.7);
 }
 
 img .work-image{
